@@ -1,0 +1,135 @@
+.tracking {
+  padding: 90px 40px;
+  background: #f4f7fb;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.tracking h2 {
+  font-size: 42px;
+  color: #07006b;
+  margin-bottom: 20px;
+}
+
+.tracking p {
+  font-size: 20px;
+  margin-bottom: 45px;
+  
+}
+
+.tracking-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tracking-box input {
+  width: 420px;
+  max-width: 90%;
+  padding: 18px;
+  font-size: 18px;
+  border: 2px solid #07006b;
+  border-radius: 5px;
+}
+
+.tracking-box button {
+  padding: 18px 35px;
+  background: #07006b;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.tracking-box button:hover {
+  background: red;
+}
+@media (max-width: 768px) {
+  .tracking {
+    padding: 60px 25px;
+  }
+
+  .tracking h2 {
+    font-size: 32px;
+  }
+
+  .tracking p {
+    font-size: 17px;
+  }
+
+  .tracking-box {
+    flex-direction: column;
+  }
+
+  .tracking-box input,
+  .tracking-box button {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+.tracking-result {
+  max-width: 550px;
+  margin: 40px auto 0 auto;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+  text-align: left;
+
+  animation: resultFade 0.5s ease;
+}
+
+.tracking-result h3 {
+  font-size: 28px;
+  color: #07006b;
+  margin-bottom: 25px;
+}
+
+.tracking-result p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@keyframes resultFade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tracking-result.delivered {
+  border-left: 8px solid #28a745;
+}
+
+.tracking-result.transit {
+  border-left: 8px solid #ff9800;
+}
+
+.tracking-result.not-found {
+  border-left: 8px solid red;
+}
+
+.tracking-box button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+input,
+textarea,
+select,
+button {
+  width: 100%;
+}

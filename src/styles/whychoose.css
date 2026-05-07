@@ -1,0 +1,92 @@
+.whychoose {
+  padding: 90px 60px;
+  background: #f4f7fb;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.whychoose h2 {
+  font-size: 42px;
+  color: #07006b;
+  margin-bottom: 55px;
+}
+
+.why-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  width: 300px;
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: 0.4s;
+}
+.why-card:hover {
+  transform: translateY(-10px);
+  background: #07006b;
+  color: white;
+}
+
+.why-card h3 {
+  font-size: 26px;
+  color: #07006b;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.why-card:hover h3 {
+  color: white;
+}
+
+.why-card p {
+  font-size: 17px;
+  line-height: 1.7;
+  
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .whychoose {
+    padding: 60px 25px;
+  }
+
+  .whychoose h2 {
+    font-size: 32px;
+  }
+
+  .why-container {
+    gap: 25px;
+  }
+
+  .why-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .why-card h3 {
+    font-size: 22px;
+  }
+
+  .why-card p {
+    font-size: 16px;
+  }
+
+}
+.service-card:hover,
+.why-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.service-card:hover,
+.why-card:hover,
+.contact-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}

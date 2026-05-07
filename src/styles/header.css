@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  height: 140px;
+  background-color: #07006b;
+}
+
+.logo-box {
+  width: 32%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  width: 95%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.contact-box {
+  width: 68%;
+  color: white;
+  padding: 25px 35px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-row.second {
+  margin-top: 35px;
+}
+
+.contact-item {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  color: #ff4d4d;
+}
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .logo-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .logo-box img {
+    width: 260px;
+    height: auto;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-row.second {
+    margin-top: 12px;
+  }
+}
+.header {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item:hover {
+  color: #ff4d4d;
+}
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo-box img {
+    width: 220px;
+    height: auto;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 15px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contact-row.second {
+    margin-top: 12px;
+  }
+
+  .contact-item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    word-break: break-word;
+    font-size: 14px;
+  }
+
+}
+

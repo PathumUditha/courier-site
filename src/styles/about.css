@@ -1,0 +1,34 @@
+.about {
+  padding: 90px 60px;
+  background: #f4f7fb;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.about h2 {
+  font-size: 42px;
+  color: #07006b;
+  margin-bottom: 35px;
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 950px;
+  margin: 0 auto 25px auto;
+  text-align: justify;
+  
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 25px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 17px;
+  }
+}
