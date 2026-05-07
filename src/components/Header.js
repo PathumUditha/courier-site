@@ -26,7 +26,7 @@ function Header() {
             className="contact-item"
           >
             <span className="contact-icon">📍</span>
-            <span>No. 239/14/2A, Finco Watta, Polgahahena, Ragama, Sri Lanka.</span>
+            <span>Sri Lanka.</span>
           </a>
         </div>
 
