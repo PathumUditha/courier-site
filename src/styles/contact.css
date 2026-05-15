@@ -1,5 +1,5 @@
 .contact {
-  padding: 110px 8%;
+  padding: 90px 8% 100px;
   background:
     radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 32%),
     linear-gradient(180deg, #e0f2fe, #f8fafc);
@@ -88,10 +88,6 @@
   box-shadow: 0 14px 35px rgba(34, 211, 238, 0.18);
 }
 
-.contact-icon svg {
-  display: block;
-}
-
 .contact-card h3 {
   position: relative;
   z-index: 2;
@@ -122,9 +118,10 @@
   }
 }
 
-.contact {
-  padding-top: 60px;
-}
+@media (max-width: 900px) {
+  .contact {
+    padding: 65px 5% 80px;
+  }
 
   .contact-heading h2 {
     font-size: 40px;
@@ -133,7 +130,7 @@
   .contact-heading p {
     font-size: 16px;
   }
-
+}
 
 @media (max-width: 650px) {
   .contact-container {

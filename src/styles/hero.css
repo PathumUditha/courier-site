@@ -5,12 +5,12 @@
   background-image:
     linear-gradient(
       90deg,
-      rgba(2, 6, 23, 0.86) 0%,
-      rgba(2, 6, 23, 0.66) 45%,
-      rgba(2, 6, 23, 0.28) 100%
+      rgba(2, 6, 23, 0.9) 0%,
+      rgba(2, 6, 23, 0.68) 45%,
+      rgba(2, 6, 23, 0.32) 100%
     ),
-    url("../../public/images/hero-bg4.png");
-  background-size: 100% 100%;
+    url("/public/images/hero-bg4.png");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   color: white;
@@ -19,7 +19,6 @@
   overflow: hidden;
 }
 
-/* Remove old grid line effect if it is too visible */
 .hero::before {
   content: "";
   position: absolute;
@@ -126,16 +125,14 @@
   margin-top: 4px;
 }
 
-/* Hide old hero visual card if your background image is now used */
 .hero-visual {
   display: none;
 }
 
-/* Tablet and mobile */
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
-    padding: 85px 5% 70px;
+    padding: 80px 5% 70px;
     background-image:
       linear-gradient(
         180deg,
@@ -143,7 +140,7 @@
         rgba(2, 6, 23, 0.88) 55%,
         rgba(2, 6, 23, 0.76) 100%
       ),
-      url("../../public/images/hero-bg5.png");
+      url("/public/images/hero-bg5.png");
     background-size: cover;
     background-position: center center;
   }
@@ -176,7 +173,6 @@
   }
 }
 
-/* Small phones */
 @media (max-width: 430px) {
   .hero {
     padding: 70px 5% 60px;
