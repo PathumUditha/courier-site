@@ -1,47 +1,69 @@
 import "../styles/services.css";
+import {
+  FaTruck,
+  FaBolt,
+  FaShoppingCart,
+  FaFileInvoice,
+  FaPlaneDeparture,
+} from "react-icons/fa";
 
 function Services() {
+  const services = [
+    {
+      icon: <FaTruck />,
+      title: "Door-to-Door Delivery",
+      text: "Our flagship service. We handle the entire journey—from your doorstep in Sri Lanka to the final recipient's desk abroad.",
+    },
+    {
+      icon: <FaBolt />,
+      title: "Express Courier",
+      text: "Time-sensitive document and parcel delivery for urgent business needs.",
+    },
+    {
+      icon: <FaShoppingCart />,
+      title: "E-Commerce Logistics",
+      text: "Tailored shipping solutions for online retailers looking to expand into Asian and international markets.",
+    },
+    {
+      icon: <FaFileInvoice />,
+      title: "Customs Brokerage",
+      text: "Expert handling of documentation and regulatory compliance to ensure smooth border crossings.",
+    },
+    {
+      icon: <FaPlaneDeparture />,
+      title: "Freight Forwarding",
+      text: "Scalable solutions for larger shipments via air and sea.",
+    },
+  ];
+
   return (
     <section className="services reveal" id="services">
-      <h2>OUR SERVICES</h2>
+      <div className="services-heading">
+        <span>Our Services</span>
+        <h2>Courier solutions built for local and global delivery</h2>
+        <p>
+          JMS Worldwide Express provides reliable courier and logistics services
+          for individuals, businesses, online sellers, and international
+          shipment needs.
+        </p>
+      </div>
 
       <div className="service-boxes">
+        {services.map((service, index) => (
+          <div className="service-card" key={service.title}>
+            <div className="service-top">
+              <div className="service-icon">{service.icon}</div>
+              <span className="service-number">0{index + 1}</span>
+            </div>
 
-        <div className="service-card">
-          <h3>🚪 Door to Door Delivery</h3>
-          <p>
-            Our flagship service. We handle the entire journey—from your doorstep in Sri Lanka to the final recipient's desk abroad.
-          </p>
-        </div>
+            <h3>{service.title}</h3>
+            <p>{service.text}</p>
 
-        <div className="service-card">
-          <h3>⚡ Express Courier</h3>
-          <p>
-            Time-sensitive document and parcel delivery for urgent business needs.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>🛒 E-Commerce Logistics</h3>
-          <p>
-            Tailored shipping solutions for online retailers looking to expand into Asian and international markets.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>🛃 Customs Brokerage</h3>
-          <p>
-            Expert handling of documentation and regulatory compliance to ensure smooth border crossings.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>✈ Freight Forwarding</h3>
-          <p>
-           Scalable solutions for larger shipments via air and sea.
-          </p>
-        </div>
-
+            <a href="#booking" className="service-link">
+              Book Service
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );

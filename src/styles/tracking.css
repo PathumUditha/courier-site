@@ -1,144 +1,147 @@
 .tracking {
-  padding: 90px 40px;
-  background: #f4f7fb;
-  text-align: center;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+  padding: 110px 8%;
+  background: #f8fafc;
 }
 
-.tracking h2 {
-  font-size: 42px;
-  color: #07006b;
-  margin-bottom: 20px;
+.tracking-main {
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.32), transparent 30%),
+    linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.22);
 }
 
-.tracking p {
-  font-size: 20px;
-  margin-bottom: 45px;
-  
+.tracking-left span {
+  color: #22d3ee;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tracking-left h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.05;
+  margin: 16px 0 20px;
+}
+
+.tracking-left p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.tracking-demo-codes {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.tracking-demo-codes button {
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  background: rgba(34, 211, 238, 0.12);
+  color: #67e8f9;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.tracking-panel {
+  padding: 22px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .tracking-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  border-radius: 24px;
 }
 
 .tracking-box input {
-  width: 420px;
-  max-width: 90%;
+  flex: 1;
+  border: none;
+  outline: none;
   padding: 18px;
-  font-size: 18px;
-  border: 2px solid #07006b;
-  border-radius: 5px;
+  border-radius: 18px;
+  font-size: 16px;
+  color: #020617;
 }
 
 .tracking-box button {
-  padding: 18px 35px;
-  background: #07006b;
-  color: white;
   border: none;
-  font-size: 18px;
-  font-weight: bold;
+  border-radius: 18px;
+  padding: 16px 24px;
+  background: #22d3ee;
+  color: #020617;
+  font-weight: 900;
   cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .tracking-box button:hover {
-  background: red;
+  background: #67e8f9;
 }
-@media (max-width: 768px) {
+
+.tracking-result {
+  margin-top: 20px;
+  padding: 24px;
+  border-radius: 26px;
+  background: white;
+  color: #020617;
+  border-left: 8px solid #64748b;
+}
+
+.tracking-result h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.tracking-result p {
+  margin: 10px 0;
+  color: #334155;
+}
+
+.tracking-result.delivered {
+  border-left-color: #10b981;
+}
+
+.tracking-result.transit {
+  border-left-color: #22d3ee;
+}
+
+.tracking-result.not-found {
+  border-left-color: #ef4444;
+}
+
+@media (max-width: 900px) {
   .tracking {
-    padding: 60px 25px;
+    padding: 80px 5%;
   }
 
-  .tracking h2 {
-    font-size: 32px;
+  .tracking-main {
+    grid-template-columns: 1fr;
+    padding: 28px;
   }
+}
 
-  .tracking p {
-    font-size: 17px;
-  }
-
+@media (max-width: 620px) {
   .tracking-box {
     flex-direction: column;
   }
 
-  .tracking-box input,
   .tracking-box button {
     width: 100%;
-    max-width: 360px;
   }
 }
-.tracking-result {
-  max-width: 550px;
-  margin: 40px auto 0 auto;
-
-  background: white;
-
-  padding: 35px;
-
-  border-radius: 18px;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-
-  text-align: left;
-
-  animation: resultFade 0.5s ease;
-}
-
-.tracking-result h3 {
-  font-size: 28px;
-  color: #07006b;
-  margin-bottom: 25px;
-}
-
-.tracking-result p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-@keyframes resultFade {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.tracking-result.delivered {
-  border-left: 8px solid #28a745;
-}
-
-.tracking-result.transit {
-  border-left: 8px solid #ff9800;
-}
-
-.tracking-result.not-found {
-  border-left: 8px solid red;
-}
-
-.tracking-box button:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-/* Desktop */
-.tracking-box button {
-  width: auto;
-  min-width: 140px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .tracking-box button {
-    width: 100%;
-    max-width: 360px;
-  }
-}
-
-
+  

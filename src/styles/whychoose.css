@@ -1,92 +1,81 @@
 .whychoose {
-  padding: 90px 60px;
-  background: #f4f7fb;
-  text-align: center;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+  padding: 110px 8%;
+  background: linear-gradient(180deg, #f8fafc, #e0f2fe);
 }
 
-.whychoose h2 {
-  font-size: 42px;
-  color: #07006b;
-  margin-bottom: 55px;
+.why-heading {
+  max-width: 850px;
+  margin-bottom: 50px;
+}
+
+.why-heading span {
+  color: #0891b2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.why-heading h2 {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.05;
+  margin-top: 16px;
+  letter-spacing: -2px;
 }
 
 .why-container {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .why-card {
-  width: 300px;
+  padding: 32px;
   background: white;
-  padding: 35px 25px;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: 0.4s;
+  border-radius: 32px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
+  transition: 0.35s ease;
 }
+
 .why-card:hover {
   transform: translateY(-10px);
-  background: #07006b;
-  color: white;
+  box-shadow: 0 30px 80px rgba(14, 116, 144, 0.18);
+}
+
+.why-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 22px;
+  background: #cffafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 22px;
 }
 
 .why-card h3 {
-  font-size: 26px;
-  color: #07006b;
-  margin-bottom: 20px;
-  transition: 0.4s;
-}
-
-.why-card:hover h3 {
-  color: white;
+  font-size: 23px;
+  margin-bottom: 12px;
 }
 
 .why-card p {
-  font-size: 17px;
-  line-height: 1.7;
-  
+  color: #64748b;
+  line-height: 1.75;
 }
 
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 768px) {
-
-  .whychoose {
-    padding: 60px 25px;
+@media (max-width: 1000px) {
+  .why-container {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .whychoose h2 {
-    font-size: 32px;
+@media (max-width: 620px) {
+  .whychoose {
+    padding: 80px 5%;
   }
 
   .why-container {
-    gap: 25px;
+    grid-template-columns: 1fr;
   }
-
-  .why-card {
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .why-card h3 {
-    font-size: 22px;
-  }
-
-  .why-card p {
-    font-size: 16px;
-  }
-
-}
-.service-card:hover,
-.why-card:hover {
-  transform: translateY(-15px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-.service-card:hover,
-.why-card:hover,
-.contact-card:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }

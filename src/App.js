@@ -1,3 +1,4 @@
+import "./App.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,10 +11,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Whatsapp from "./components/Whatsapp";
 
-
 function App() {
   return (
-    <div className="page-border">
+    <div className="app">
       <Header />
       <Navbar />
       <Hero />

@@ -2,42 +2,44 @@ import "../styles/header.css";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="logo-box">
-        <img src="/images/logo.png" alt="JMS Logo" />
+    <header className="top-header">
+      <div className="header-logo-wrap">
+        <img src="/images/logo.png" alt="JMS Worldwide Express Logo" />
       </div>
 
-      <div className="contact-box">
-        <div className="contact-row">
-          <a href="tel:+94112889845" className="contact-item">
-            <span className="contact-icon">☎</span>
-            <span>+94 112 889 845</span>
-          </a>
+      <div className="header-info-grid">
+        <a href="tel:+94112889845" className="header-info-card">
+          <span>☎</span>
+          <div>
+            <small>Call Office</small>
+            <strong>+94 112 889 845</strong>
+          </div>
+        </a>
 
-          <a href="mailto:info@jmsworldwide.com" className="contact-item">
-            <span className="contact-icon">✉</span>
-            <span>Info@jmsworlde.com</span>
-          </a>
+        <a href="tel:+94741926764" className="header-info-card">
+          <span>📱</span>
+          <div>
+            <small>Mobile</small>
+            <strong>+94 741 926 764</strong>
+          </div>
+        </a>
 
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Sri+Lanka"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-item"
-          >
-            <span className="contact-icon">📍</span>
-            <span>Sri Lanka.</span>
-          </a>
-        </div>
-
-        <div className="contact-row second">
-          <a href="tel:+94741926764" className="contact-item">
-            <span className="contact-icon">📱</span>
-            <span>+94 741 926 764</span>
-          </a>
-        </div>
+        <a href="mailto:Info@jmsworlde.com" className="header-info-card">
+          <span>✉</span>
+          <div>
+            <small>Email</small>
+            <strong>Info@jmsworlde.com</strong>
+          </div>
+        </a>
       </div>
-    </div>
+
+      <div className="mobile-header-actions">
+        <a href="tel:+94741926764">Call</a>
+        <a href="https://wa.me/94741926764" target="_blank" rel="noreferrer">
+          WhatsApp
+        </a>
+      </div>
+    </header>
   );
 }
 
