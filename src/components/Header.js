@@ -4,7 +4,10 @@ function Header() {
   return (
     <header className="top-header">
       <div className="header-logo-wrap">
-        <img src="/images/logo.png" alt="JMS Worldwide Express Logo" />
+        <img
+          src="/images/logo.png"
+          alt="JMS Worldwide Express Logo"
+        />
       </div>
 
       <div className="header-info-grid">
