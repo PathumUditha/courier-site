@@ -124,24 +124,78 @@
   border-left-color: #ef4444;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 620px) {
   .tracking {
-    padding: 80px 5%;
+    padding: 55px 5%;
   }
 
   .tracking-main {
-    grid-template-columns: 1fr;
-    padding: 28px;
+    padding: 26px 22px;
+    border-radius: 30px;
+    gap: 28px;
   }
-}
 
-@media (max-width: 620px) {
+  .tracking-left h2 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .tracking-left p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .tracking-note {
+    margin-top: 18px;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .tracking-note strong {
+    font-size: 18px;
+  }
+
+  .tracking-note p {
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .tracking-panel {
+    padding: 16px;
+    border-radius: 26px;
+  }
+
   .tracking-box {
     flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 22px;
+  }
+
+  .tracking-box input {
+    width: 100%;
+    padding: 15px 14px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 16px;
   }
 
   .tracking-box button {
     width: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+  }
+
+  .tracking-result {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .tracking-result h3 {
+    font-size: 22px;
   }
 }
-  

@@ -66,7 +66,7 @@ function Tracking() {
           <div className="tracking-box">
             <input
               type="text"
-              placeholder="Enter Shipment Reference Number"
+              placeholder="Tracking No."
               value={trackingNumber}
               onChange={(e) => setTrackingNumber(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleTracking()}
