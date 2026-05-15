@@ -47,7 +47,7 @@ function Hero() {
             </div>
 
             <div>
-              <strong>SEA</strong>
+              <strong>Air</strong>
               <span>Regional Expertise</span>
             </div>
 
