@@ -3,9 +3,9 @@
   padding: 16px 8%;
   background: #020617;
   color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -13,51 +13,45 @@
 .header-logo-wrap {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .header-logo-wrap img {
-  width: 320px;
-  height: 105px;
-  object-fit: contain;
-  background: transparent;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .header-info-grid {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
 }
 
 .header-info-card {
-  min-width: 230px;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 15px 18px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.055);
+  padding: 14px 16px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.3s ease;
+  min-width: 0;
 }
 
 .header-info-card:hover {
-  background: rgba(34, 211, 238, 0.13);
-  transform: translateY(-3px);
+  background: rgba(34, 211, 238, 0.12);
+  transform: translateY(-2px);
 }
 
 .header-info-card span {
   width: 50px;
   height: 50px;
-  border-radius: 16px;
+  border-radius: 18px;
   background: #22d3ee;
   color: #020617;
   display: flex;
@@ -76,89 +70,67 @@
 
 .header-info-card strong {
   display: block;
-  font-size: 17px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.4;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mobile-header-actions {
   display: none;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
   .top-header {
     padding: 16px 5%;
-    gap: 18px;
+    grid-template-columns: 290px 1fr;
   }
 
   .header-logo-wrap img {
-    width: 270px;
-    height: 92px;
+    max-width: 290px;
   }
 
   .header-info-card {
-    min-width: 205px;
-    padding: 13px 15px;
-  }
-
-  .header-info-card span {
-    width: 46px;
-    height: 46px;
+    padding: 14px 14px;
   }
 
   .header-info-card strong {
     font-size: 15px;
   }
-
-  .header-info-card small {
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 1100px) {
   .top-header {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .header-logo-wrap {
-    width: 100%;
     justify-content: center;
   }
 
   .header-logo-wrap img {
-    width: 300px;
-    height: 100px;
+    max-width: 320px;
   }
 
   .header-info-grid {
-    width: 100%;
-    justify-content: center;
-    flex: unset;
-  }
-
-  .header-info-card {
-    flex: 1;
-    max-width: 300px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 900px) {
   .top-header {
-    flex-wrap: nowrap;
+    display: flex;
     justify-content: space-between;
-    padding: 14px 5%;
+    align-items: center;
+    padding: 12px 5%;
     gap: 10px;
   }
 
-  .header-logo-wrap {
-    width: auto;
-    justify-content: flex-start;
-    flex: 1;
-  }
-
   .header-logo-wrap img {
-    width: 175px;
-    height: 74px;
+    max-width: 180px;
   }
 
   .header-info-grid {
@@ -168,16 +140,15 @@
   .mobile-header-actions {
     display: flex;
     gap: 8px;
-    flex-shrink: 0;
   }
 
   .mobile-header-actions a {
     text-decoration: none;
-    padding: 9px 11px;
+    padding: 9px 12px;
     border-radius: 999px;
     background: #22d3ee;
     color: #020617;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 900;
     white-space: nowrap;
   }
@@ -190,33 +161,23 @@
 
 @media (max-width: 430px) {
   .top-header {
-    padding: 12px 4%;
-    gap: 8px;
+    padding: 10px 4%;
   }
 
   .header-logo-wrap img {
-    width: 150px;
-    height: 64px;
-  }
-
-  .mobile-header-actions {
-    gap: 6px;
+    max-width: 155px;
   }
 
   .mobile-header-actions a {
-    padding: 8px 9px;
+    padding: 8px 10px;
     font-size: 10px;
   }
+  .header-info-card div {
+  min-width: 0;
 }
 
-@media (max-width: 360px) {
-  .header-logo-wrap img {
-    width: 135px;
-    height: 58px;
-  }
+.header-info-card strong {
+  max-width: 100%;
+}
 
-  .mobile-header-actions a {
-    padding: 7px 8px;
-    font-size: 9.5px;
-  }
 }
