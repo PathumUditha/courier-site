@@ -63,8 +63,10 @@ function Contact() {
 
           <h3>Working Hours</h3>
 
-          <p>Monday - Saturday</p>
-          <p>8.00 AM - 6.00 PM</p>
+          <p>Monday - Friday</p>
+          <p>08.30 AM - 5.30 PM</p>
+          <p>Saturday</p>
+          <p>09.00 AM - 01.30 PM</p>
         </div>
       </div>
     </section>

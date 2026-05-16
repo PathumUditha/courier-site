@@ -22,13 +22,13 @@ function About() {
       </div>
 
       <div className="about-card-stack">
-        <div className="about-card dark">
-          <h3>Global Reach</h3>
-          <p>Courier and logistics solutions for regional and international destinations.</p>
-        </div>
         <div className="about-card light">
           <h3>Door-to-Door Focus</h3>
-          <p>From pickup in Sri Lanka to final delivery overseas.</p>
+          <p>A highly reliable express courier service, especially from the doorsteps of South East Asian suppliers to the doorsteps of Sri Lankan buyers.</p>
+        </div>
+        <div className="about-card dark">
+          <h3>Global Reach</h3>
+          <p>Air cargo and Sea cargo solutions for regional and international destinations.</p>
         </div>
       </div>
     </section>

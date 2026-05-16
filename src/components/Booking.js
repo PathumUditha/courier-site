@@ -48,7 +48,7 @@ function Booking() {
       <form className="booking-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
-            <label>Sender Name</label>
+            <label>Name</label>
             <input type="text" placeholder="Enter sender name" required />
           </div>
 

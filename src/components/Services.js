@@ -12,7 +12,7 @@ function Services() {
     {
       icon: <FaTruck />,
       title: "Door-to-Door Delivery",
-      text: "Our flagship service. We handle the entire journey—from your doorstep in Sri Lanka to the final recipient's desk abroad.",
+      text: "We are specialists in providing seamless, end-to-end global shipping solutions, with a primary focus on highly efficient door-to-door services.",
     },
     {
       icon: <FaBolt />,
@@ -27,7 +27,7 @@ function Services() {
     {
       icon: <FaFileInvoice />,
       title: "Customs Brokerage",
-      text: "Expert handling of documentation and regulatory compliance to ensure smooth border crossings.",
+      text: "Expert handling of documentation, regulatory compliance, and customs clearance to ensure smooth border crossings.",
     },
     {
       icon: <FaPlaneDeparture />,
