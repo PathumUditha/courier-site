@@ -27,7 +27,7 @@ function Hero() {
 
           <p className="hero-text">
             Reliable courier, cargo, e-commerce logistics, and international
-            shipping solutions from Sri Lanka to global destinations.
+            shipping solutions.
           </p>
 
           <div className="hero-actions">
