@@ -10,6 +10,7 @@ import Tracking from "./components/Tracking";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Whatsapp from "./components/Whatsapp";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Contact />
       <Footer />
       <Whatsapp />
+      <ScrollToTopButton />
     </div>
   );
 }

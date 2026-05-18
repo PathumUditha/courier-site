@@ -1,8 +1,8 @@
 .whatsapp-button {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 4000;
+  right: 20px;
+  bottom: 30px;
+  z-index: 9998;
   width: 64px;
   height: 64px;
   border-radius: 50%;
